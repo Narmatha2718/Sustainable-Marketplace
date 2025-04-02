@@ -1,0 +1,114 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Confirmation Section Styling */
+.confirmation-section {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.order-summary, .shipping-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff7f00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .confirmation-section {
+        width: 80%;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="confer.css">
+</head>
+<body>
+
+    <!-- Confirmation Header -->
+    <header>
+        <div class="navbar">
+            <h1>Order Confirmation</h1>
+        </div>
+    </header>
+
+    <!-- Confirmation Section -->
+    <section class="confirmation-section">
+        <h2>Thank You for Your Order!</h2>
+        <p>Your order has been successfully placed.</p>
+
+        <div class="order-summary">
+            <h3>Order Details:</h3>
+            <p><strong>Dress:</strong> Organic Cotton Shirt</p>
+            <p><strong>Size:</strong> Medium</p>
+            <p><strong>Quantity:</strong> 1</p>
+            <p><strong>Total Amount:</strong> ₹1,678</p>
+        </div>
+
+        <div class="shipping-details">
+            <h3>Shipping Details:</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Address:</strong> 123 Green Street, Eco City</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+        </div>
+
+        <button onclick="goHome()">Go to Home</button>
+    </section>
+
+    <script src="confer.js"></script>
+</body>
+</html>
